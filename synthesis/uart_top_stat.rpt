@@ -1,0 +1,56 @@
+
+17. Printing statistics.
+
+=== uart_top ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      352        - wires
+      368        - wire bits
+       73        - public wires
+       89        - public wire bits
+        9        - ports
+       25        - port bits
+      353  2992.87 cells
+        2   17.517   sky130_fd_sc_hd__a2111oi_0
+        2   15.014   sky130_fd_sc_hd__a211oi_1
+        1    7.507   sky130_fd_sc_hd__a21boi_0
+        3   22.522   sky130_fd_sc_hd__a21o_1
+       47  235.226   sky130_fd_sc_hd__a21oi_1
+        1    10.01   sky130_fd_sc_hd__a221o_1
+        3   26.275   sky130_fd_sc_hd__a311oi_1
+        5    31.28   sky130_fd_sc_hd__a31oi_1
+        2   17.517   sky130_fd_sc_hd__a41oi_1
+        6   37.536   sky130_fd_sc_hd__and2_0
+        6   37.536   sky130_fd_sc_hd__and3_1
+        1    8.758   sky130_fd_sc_hd__and3b_1
+        4   35.034   sky130_fd_sc_hd__and4_1
+        9   33.782   sky130_fd_sc_hd__clkinv_1
+       73 1.46E+03   sky130_fd_sc_hd__dfxtp_1
+        1    10.01   sky130_fd_sc_hd__mux2i_1
+        2   45.043   sky130_fd_sc_hd__mux4_2
+       63  236.477   sky130_fd_sc_hd__nand2_1
+        3   18.768   sky130_fd_sc_hd__nand2b_1
+        8   40.038   sky130_fd_sc_hd__nand3_1
+        1    7.507   sky130_fd_sc_hd__nand3b_1
+        6   37.536   sky130_fd_sc_hd__nand4_1
+       37  138.883   sky130_fd_sc_hd__nor2_1
+        4   25.024   sky130_fd_sc_hd__nor2b_1
+       18   90.086   sky130_fd_sc_hd__nor3_1
+        8   60.058   sky130_fd_sc_hd__nor3b_1
+        1    6.256   sky130_fd_sc_hd__nor4_1
+        1    8.758   sky130_fd_sc_hd__nor4b_1
+        1    8.758   sky130_fd_sc_hd__o2111ai_1
+        2   20.019   sky130_fd_sc_hd__o211a_1
+        7   35.034   sky130_fd_sc_hd__o21ai_0
+        1    7.507   sky130_fd_sc_hd__o31ai_1
+        2   12.512   sky130_fd_sc_hd__or2_0
+        2   12.512   sky130_fd_sc_hd__or3_1
+        2   17.517   sky130_fd_sc_hd__or3b_1
+       11   96.342   sky130_fd_sc_hd__xnor2_1
+        7   61.309   sky130_fd_sc_hd__xor2_1
+
+   Chip area for module '\uart_top': 2992.870400
+     of which used for sequential elements: 1461.401600 (48.83%)
+
