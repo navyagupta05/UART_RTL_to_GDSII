@@ -42,15 +42,18 @@ layout/            Screenshots of the design at each physical design stage
 
 The testbench in `testbench/uart_top_tb.v` drives bytes through the transmitter, across the internal loopback, and checks the received byte against what was sent, at every one of the five baud rates. All bytes were received correctly with zero errors, and the measured `enb_tx`/`enb_rx` tick periods and bit spacing on the serial line matched the expected divisor at each rate.
 
-**Screenshot placement:** `waveforms/` folder. Suggested captures:
-- ![Full multi-baud run showing `baud_sel` stepping through all five rates](waveforms/configurable_baud_rate_generator.png)
+![Full multi-baud run showing `baud_sel` stepping through all five rates](waveforms/configurable_baud_rate_generator.png)
 *Full multi-baud run showing `baud_sel` stepping through all five rates*
-- ![UART transmitter FSM and tx_line](waveforms/uart_transmitter.png)
-  *UART transmitter FSM and tx_line*
-- ![UART receiver FSM and data_out](waveforms/uart_receiver.png)
+
+![UART transmitter FSM and tx_line](waveforms/uart_transmitter.png)
+*UART transmitter FSM and tx_line*
+
+![UART receiver FSM and data_out](waveforms/uart_receiver.png)
 *UART receiver FSM and data_out*
-- ![Multi-baud functional run](waveforms/cbrg_uart_top.png)
+
+![Multi-baud functional run](waveforms/cbrg_uart_top.png)
 *Multi-baud functional run*
+
 
 ## Synthesis
 
@@ -132,15 +135,18 @@ From `openlane/report_artifacts/manufacturability.rpt`, `metrics.csv`, and `33-r
 | Switching power | 0.187 nW |
 | Leakage power | 0.00674 nW |
 
-**Screenshot placement:** `layout/` folder, in flow order:
 ![Floorplan- the die/core outline and IO placement before any cells are placed](layout/uart_floorplan.png)
 *Floorplan*
+
 ![Placement- all standard cells placed into rows](layout/uart_placement.png)
 *Placement*
+
 ![Routing- the fully routed design with metal layers visible](layout/uart_routing.png)
 *Routing*
+
 ![Final GDSII layout- the final GDSII layout as streamed out by Magic](layout/uart_gdsii.png)
 *Final GDSII layout*
+
 
 ## Reproducing the flow
 
