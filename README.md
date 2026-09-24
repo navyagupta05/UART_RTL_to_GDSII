@@ -43,9 +43,10 @@ layout/            Screenshots of the design at each physical design stage
 The testbench in `testbench/uart_top_tb.v` drives bytes through the transmitter, across the internal loopback, and checks the received byte against what was sent, at every one of the five baud rates. All bytes were received correctly with zero errors, and the measured `enb_tx`/`enb_rx` tick periods and bit spacing on the serial line matched the expected divisor at each rate.
 
 **Screenshot placement:** `waveforms/` folder. Suggested captures:
-- Full multi-baud run showing `baud_sel` stepping through all five rates against `dout` and `errors`
-- A single frame at 9600 baud showing the transmitter and receiver FSM states side by side
-- The baud rate generator's internal counters and `enb_tx`/`enb_rx` ticks across a rate change
+- ![Full multi-baud run showing `baud_sel` stepping through all five rates](waveforms/configurable_baud_rate_generator.png)
+- ![UART transmitter FSM and tx_line](waveforms/uart_transmitter.png)
+- ![UART receiver FSM and data_out](waveforms/uart_receiver.png)
+- ![Multi-baud functional run](waveforms/cbrg_uart_top.png)
 
 ## Synthesis
 
@@ -128,10 +129,10 @@ From `openlane/report_artifacts/manufacturability.rpt`, `metrics.csv`, and `33-r
 | Leakage power | 0.00674 nW |
 
 **Screenshot placement:** `layout/` folder, in flow order:
-- `uart_floorplan.png`, the die/core outline and IO placement before any cells are placed
-- `uart_placement.png`, all standard cells placed into rows
-- `uart_routing.png`, the fully routed design with metal layers visible
-- `uart_gdsii.png`, the final GDSII layout as streamed out by Magic
+![Floorplan- the die/core outline and IO placement before any cells are placed](layout/uart_floorplan.png)
+![Placement- all standard cells placed into rows](layout/uart_placement.png)
+![Routing- the fully routed design with metal layers visible](layout/uart_routing.png)
+![Final GDSII layout- the final GDSII layout as streamed out by Magic](layout/uart_gdsii.png)
 
 ## Reproducing the flow
 
